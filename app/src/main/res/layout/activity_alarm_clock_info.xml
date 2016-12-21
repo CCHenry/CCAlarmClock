@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.cc.zzf.ccalarmclock.AlarmClockInfoActivity">
+<RelativeLayout
+    android:id="@id/rl0"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#dddddd">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:id="@id/btn1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="设置闹钟"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_alignParentRight="true"
+        android:id="@id/btn2"/>
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/rl0">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dip">
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_margin="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="重复"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="只响一次"/>
+
+            </LinearLayout>
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="15dip"
+                android:layout_height="30dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/right_arrow" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dip"
+            android:id="@id/rl1"
+            >
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_margin="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="铃声"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="普通起床音乐"/>
+
+            </LinearLayout>
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="15dip"
+                android:layout_height="30dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/right_arrow" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dip">
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_margin="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="响铃时震动"/>
+
+
+            </LinearLayout>
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="15dip"
+                android:layout_height="30dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/right_arrow" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dip">
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_margin="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="响铃后删除此闹钟"/>
+
+
+            </LinearLayout>
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="15dip"
+                android:layout_height="30dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/right_arrow" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dip">
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_margin="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="闹钟备注"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:layout_marginLeft="10dip"
+                    />
+                <EditText
+                    android:layout_marginLeft="10dip"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <TimePicker
+
+            android:id="@+id/timepicker"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>

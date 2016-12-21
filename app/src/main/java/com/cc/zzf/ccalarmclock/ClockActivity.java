@@ -1,5 +1,4 @@
 package com.cc.zzf.ccalarmclock;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -7,7 +6,6 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.cc.zzf.ccalarmclock.R;
 
 public class ClockActivity extends AppCompatActivity {
 
@@ -29,6 +27,7 @@ public class ClockActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
                 mediaPlayer.stop();
                 ClockActivity.this.finish();
+
             }
         }).show();
     }

@@ -12,20 +12,30 @@
     android:layout_height="wrap_content"
     android:background="#dddddd">
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dip"
+        android:layout_height="27dip"
         android:text="取消"
+        android:textColor="@color/beige"
+
+        android:layout_centerVertical="true"
+        android:textSize="12sp"
+        android:background="@drawable/button_style1"
         android:id="@id/btn1"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+
         android:text="设置闹钟"/>
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dip"
+        android:layout_height="27dip"
         android:text="确定"
         android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/beige"
+        android:textSize="12sp"
+        android:background="@drawable/button_style2"
         android:id="@id/btn2"/>
 </RelativeLayout>
     <LinearLayout
@@ -50,17 +60,27 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="只响一次"/>
+                    android:text="只响一次"
+                    android:id="@+id/tv0"/>
 
             </LinearLayout>
-            <ImageView
-                android:scaleType="fitXY"
-                android:layout_width="15dip"
-                android:layout_height="30dip"
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="10dip"
-                android:layout_alignParentRight="true"
-                android:background="@drawable/right_arrow" />
+                android:id="@+id/checkbox0"
+                />
+            <!--<ImageView-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:layout_width="15dip"-->
+                <!--android:layout_height="30dip"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="10dip"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:background="@drawable/right_arrow" />-->
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
@@ -81,6 +101,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/tv1"
                     android:text="普通起床音乐"/>
 
             </LinearLayout>
@@ -110,14 +131,15 @@
 
 
             </LinearLayout>
-            <ImageView
-                android:scaleType="fitXY"
-                android:layout_width="15dip"
-                android:layout_height="30dip"
+            <CheckBox
+                android:id="@+id/checkbox1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="10dip"
-                android:layout_alignParentRight="true"
-                android:background="@drawable/right_arrow" />
+                />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
@@ -136,14 +158,15 @@
 
 
             </LinearLayout>
-            <ImageView
-                android:scaleType="fitXY"
-                android:layout_width="15dip"
-                android:layout_height="30dip"
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="10dip"
-                android:layout_alignParentRight="true"
-                android:background="@drawable/right_arrow" />
+                android:id="@+id/checkbox2"
+
+                />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
@@ -171,16 +194,26 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:id="@id/et"
                     />
             </LinearLayout>
 
         </RelativeLayout>
-        <TimePicker
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:theme="@android:style/Theme.Holo.Light">
 
-            android:id="@+id/timepicker"
+
+        <TimePicker
+            android:layout_centerVertical="true"
+            style="@style/Theme.AppCompat.Light"
+            android:id="@+id/time_picker"
+
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"/>
+        </RelativeLayout>
     </LinearLayout>
 
 </RelativeLayout>

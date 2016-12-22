@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <corners
+        android:radius="9dp"
+
+        /><!-- 设置圆角半径 -->
+    <!--&lt;!&ndash; 渐变 &ndash;&gt;-->
+    <!--<gradient-->
+    <!--android:startColor="@android:color/white"-->
+    <!--android:centerColor="@android:color/black"-->
+    <!--android:endColor="@android:color/black"-->
+    <!--android:useLevel="true"-->
+    <!--android:angle="45"-->
+    <!--android:type="radial"-->
+    <!--android:centerX="0"-->
+    <!--android:centerY="0"-->
+    <!--android:gradientRadius="90"/>-->
+
+    <!-- 间隔 -->
+
+
+
+    <!-- 填充 -->
+    <solid android:color="#2050ff"/>
+    <!--<gradient-->
+    <!--android:endColor="#fa3583"-->
+    <!--android:gradientRadius="100"-->
+    <!--android:startColor="#f5609b"-->
+    <!--android:type="radial" />-->
+    <!--&lt;!&ndash; 描边 &ndash;&gt;-->
+    <!--<stroke-->
+    <!--android:width="2dp"-->
+    <!--android:color="@android:color/black"-->
+    <!--android:dashWidth="1dp"-->
+    <!--android:dashGap="2dp"/>-->
+
+</shape>

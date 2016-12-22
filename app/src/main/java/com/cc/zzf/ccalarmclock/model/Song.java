@@ -1,9 +1,11 @@
 package com.cc.zzf.ccalarmclock.model;
 
+import java.io.Serializable;
+
 /**
  * Created by zzf on 16/12/22.
  */
-public class Song {
+public class Song implements Serializable {
     private String title;
     private String url;
 

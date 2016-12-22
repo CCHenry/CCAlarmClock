@@ -10,13 +10,15 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
+import com.cc.zzf.ccalarmclock.i.IHandlerListener;
+
 import org.xutils.x;
 
 
 /**
  * Created by henryzheng on 2016/9/27.
  */
-public class BaseFragment extends Fragment  implements IHandlerListener{
+public class BaseFragment extends Fragment  implements IHandlerListener {
 
     private boolean injected = false;
     public Handler handler = new Handler() {

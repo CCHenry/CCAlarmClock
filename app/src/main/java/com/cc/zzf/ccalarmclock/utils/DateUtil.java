@@ -668,6 +668,7 @@ public class DateUtil {
 
    public static Date getTimeFromString(String dateStr) {
       Date strDate = null;
+
       if (!StringUtil.isEmpty1(dateStr)) {
 
          try {

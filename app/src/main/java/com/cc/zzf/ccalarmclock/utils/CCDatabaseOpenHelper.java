@@ -16,6 +16,7 @@ public class CCDatabaseOpenHelper {
     private static DbManager db;
     private final String DB_NAME = "mydb.db";
     private final int VERSION = 1;
+
     private CCDatabaseOpenHelper() {
         CCFileUtil.getHandleFilePath(MyContonts.cacheDir);
         daoConfig = new DbManager.DaoConfig()
